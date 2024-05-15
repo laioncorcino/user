@@ -1,0 +1,7 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://laioncorcino:LGEcpgR9qrQpvutq@mongo-cloud.ah6h5hz.mongodb.net/
+      port: 27017
+      database: users_db
