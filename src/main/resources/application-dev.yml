@@ -1,9 +1,35 @@
 server:
   port: 8081
 
+queue:
+  name: users_greetings
+
+jwt:
+  secret: aeb845ec-b209-4233-8f43-b1b87569e884
+  expiration: 36000
+
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/
       port: 27017
       database: users_db
+
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username: sergiojavaarq@outlook.com
+    password: "@Admin12345"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  rabbitmq:
+    host: puffin.rmq2.cloudamqp.com
+    port: 5672
+    username: quncowaf
+    password: p153xHcz0HUh4q0pqVJMHMmYhxHDWu8M
+    virtual-host: quncowaf
