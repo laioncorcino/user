@@ -7,6 +7,7 @@ import java.security.NoSuchAlgorithmException;
 
 @Component
 public class SHA256Component {
+
     public String hash(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -22,4 +23,5 @@ public class SHA256Component {
             return null;
         }
     }
+
 }
