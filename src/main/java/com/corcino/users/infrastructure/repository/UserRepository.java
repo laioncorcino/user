@@ -13,7 +13,7 @@ public interface UserRepository extends MongoRepository<User, UUID> {
     @Query("{'email':  ?0}")
     User findByEmail(String email);
 
-    @Query("{'email':  ?0, 'password':  ?1}")
+    @Query("{'email':  ?0, 'pass':  ?1}")
     User findByEmailAndPass(String email, String pass);
 
 }
